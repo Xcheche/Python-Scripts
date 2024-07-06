@@ -1,0 +1,9 @@
+def get_fullname(first_name,lastname,middle_name=''):
+    if middle_name:
+        return f'{first_name} {middle_name} {lastname}'
+    else:
+        full_name = f'{first_name}, {lastname}'
+        return full_name.title()
+
+musician = get_fullname(first_name=input('Enter first name:'),middle_name=input('Enter middle name:'),lastname=input('Enter lastname:'))
+print(musician)
